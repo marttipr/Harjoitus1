@@ -1,3 +1,3 @@
-#ensimmäiset python-koodit
-print('Hei, Martti')
-print('toinen tulostus')
+käyttäjä = (input('Martti: ')
+
+print("Hauska tavata," + käyttäjä + "!")
