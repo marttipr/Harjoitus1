@@ -1,3 +1,5 @@
 import math
-säde=float(input('anna ympyrän säde:'))
-print(f'ympyrän pinta-ala:.2f´ neliöyksikköä.')
+r = float(input('anna ympyran_sade:'))
+
+area = math.pi * r * r
+print(f'ympyran, jonka sade on {r}, pinta-ala on {area:.1f} neliömetriä')
