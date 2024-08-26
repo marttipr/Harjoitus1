@@ -53,7 +53,10 @@ print('ohjelma loppuu, hei hei')
 age = 5
 name = 'matti'
 
-print(age < 10 and name == 'matti')
+print(age < 10 and name == 'matti') #ture
 
 # True False
-print(age < 10 and name == 'kari')
+print(age < 10 and name == 'kari') # false
+
+# or
+print(age <10 or name == 'kari')
