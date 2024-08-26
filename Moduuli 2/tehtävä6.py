@@ -11,5 +11,6 @@ luoditTot = naulatTot * 32 + luoti
 # kun tiedämme määrän niin lasketaan massa ensin grammoina
 grammatTot = luoditTot * 13.3
 
-kg = grammatTot / 1000
-print('kokonais kg määrä', kg)
+kg = grammatTot // 1000
+gr = grammatTot % 1000
+print(f'Massa nykymittojen mukaan: {kg} kg ja {gr:.2f} grammaa')
