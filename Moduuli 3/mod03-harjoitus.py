@@ -49,7 +49,7 @@ else:
     print('Käyttäjä ei syöttänyt a,b tai c. ei tehdä mitään')
 
 print('ohjelma loppuu, hei hei')
-'''
+
 age = 5
 name = 'matti'
 
@@ -60,3 +60,26 @@ print(age < 10 and name == 'kari') # false
 
 # or
 print(age <10 or name == 'kari')
+
+print(True and True)
+print(False and True)
+print(True or True)
+print(False or True)
+print(True and(False or True))
+
+result = (False or False) and (False or True)
+print(f'vertailun tulos: {result}')
+print(1 < 2 or (1 == 1 and result == True))
+
+# while-silmukat
+# ikuinen silmukka, ei hyvä
+while True:
+    print('moro')
+    print('matti')
+'''
+
+counter = 0
+while counter < 5:
+    print(f'{counter}. kerran Hello')
+    counter = counter + 1
+print(f'laskurin arvo lopuksi: {counter-1}')
