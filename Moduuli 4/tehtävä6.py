@@ -5,8 +5,8 @@ import random
 N = 100 # pisteiden kokonaismäärä
 n = 1 #ympyrään osuvien pisteiden lkm
 iterator = 0
+N = int(input('pisteiden määrä'))
 while iterator < N:
-    N = int(input('pisteiden määrä'))
     iterator += 1
     #arvotaan yksi piste
     x= random.uniform(-1, 1)
