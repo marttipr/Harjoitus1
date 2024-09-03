@@ -35,13 +35,10 @@ import numbers
 
 def calculate_sum(numbers):
     total_sum = 0
-  #  for i in range(len(numbers)):
-   #     total_sum = total_sum + numbers[i]
     for num in numbers:
         total_sum = total_sum + num
     return total_sum
 
 nums = [3,4,5]
 print(calculate_sum(nums))
-
-print(calculate_sum([3,4,5,10]))
+print(calculate_sum([2,3,8,-10,4.67]))
