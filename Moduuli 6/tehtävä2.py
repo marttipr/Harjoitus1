@@ -2,10 +2,14 @@ import random
 
 
 def throw_dice(overall):
-    return random.randint(1,dice_max)
-dice_max = int(input('Anna nopan suurin silmäluku'))
+
+    return random.randint(1,overall)
+
+overall = int(input('Anna nopan suurin silmäluku'))
 result = 0
-while result == dice_max:
-    result = throw_dice()
-    print(result)
+while True:
+    result =throw_dice(overall)
+    print(f'Noppaa heitettiin: {result}')
+    if result == overall:
+        break
     
