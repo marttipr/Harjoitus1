@@ -29,7 +29,7 @@ def calculate(calc_type, number1, number2):
 
 print(calculate('sum', 2.4,3.5))
 print(calculate('division', 2.4,3))
-'''
+
 import numbers
 
 
@@ -42,3 +42,15 @@ def calculate_sum(numbers):
 nums = [3,4,5]
 print(calculate_sum(nums))
 print(calculate_sum([2,3,8,-10,4.67]))
+print('----------')
+
+
+def calculate2(number1, number2, calc_type='sum'):
+    if calc_type == 'sum':
+        return number1 + number2
+    elif type == 'division':
+        return number2 / number1
+    print(calculate2(2.4,3.5))
+    print(calculate2(number2=2.4, number1=3.5,calc_type='division'))
+'''
+
