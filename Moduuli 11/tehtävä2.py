@@ -43,3 +43,5 @@ if __name__ == '__main__':
     print(f'{sahkoauto.rekisteritunnus} sähköauton matka: {sahkoauto.matka} km')
     print(f'{polttomoottoriauto.rekisteritunnus} polttomoottoriauton matka: {polttomoottoriauto.matka} km')
 
+
+
