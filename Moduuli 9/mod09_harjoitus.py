@@ -56,7 +56,7 @@ class LuokanNimi:
 
 
 
-
+'''
 
 class Koira:
 
@@ -77,3 +77,35 @@ k4=Koira('Iiro', 2011, 'Oranssi', 'Pieni')
 print(k4.nimi)
 
 k1.printtaa_tiedot()
+
+'''
+
+
+
+class Koira:
+
+    tehty = 0
+
+    def __init__(self, nimi, syntymavuosi, väri, koko, haukahdus = 'HAUHAUHUAHUA'):
+        self.nimi = nimi
+        self.syntymavuosi = syntymavuosi
+        self.väri = väri
+        self.koko = koko
+        self.haukahdus = haukahdus
+        Koira.tehty = Koira.tehty + 1
+
+    def printtaa_tiedot(self):
+        print(f' Koiran nimi on {self.nimi} ja syntymävuosi on {self.syntymavuosi}')
+        return
+
+    def hauku(self, kerrat):
+        print(f'{self.nimi} haukkuu {self.haukahdus} kertaa')
+        for i in range(kerrat):
+            print(self.haukahdus)
+        return
+
+k1 = Koira('Lissu', 2015, 'Musta', 'pieni', 'WOOF WOOOF')
+k2 = Koira('Reko', 2018, 'valkoinen', 'pieni', 'Woooooof')
+k3 = Koira('Mikki', 2019, 'keltainen,', 'Iso')
+print(f'Koiria on yhteensä: {Koira.tehty}')
+k2.hauku(3)
