@@ -132,6 +132,27 @@ function main() {
 }
 main();
 
+function rollDice() {
+            // Generate a random dice roll between 1 and 6
+            return Math.floor(Math.random() * 6) + 1;
+        }
+
+        function main2() {
+            const resultsElement = document.getElementById('rollResults');
+            let roll;
+
+            // Roll the dice until a 6 is rolled
+            do {
+                roll = rollDice();
+                const listItem = document.createElement('li');
+                listItem.textContent = `You rolled: ${roll}`;
+                resultsElement.appendChild(listItem);
+            } while (roll !== 6);
+        }
+
+        // Run the main program when the page loads
+        main2();
+
 
 
 
